@@ -1,0 +1,134 @@
+/* header */
+header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background: #0A1848;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    box-shadow: 0px 2px 15px #110e45;
+} /*
+.link {
+    display: block;
+    height: 80px; 
+    margin-top: -80px;
+    visibility: hidden;
+}
+.link-sobrenos{
+    height: 60px;
+} */
+
+    /*Logo do Site*/
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 100%;
+}
+
+header img{
+    width: 115px;
+    height: 37px;
+}
+
+    /* Menu */
+header .list-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    margin-left: 20px;
+}
+
+header .list-menu a{
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    padding: 15px;
+    text-decoration: none;
+    color: #c4c8d3;
+    background: none;
+    margin: 5px;
+    height: auto;
+    border-radius: 2px;
+    transition: .2s;
+}
+
+header .list-menu a:hover{
+    background-color: #0d1f5a;
+    color: white;
+}
+
+header .list-menu a.ativado{
+    background-color: #132b78;
+}
+
+
+    /*Contato no menu*/
+header .contact-menu{
+    height: 65px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+    background: #081338;
+}
+
+header .contact{
+    display: inline-block;
+    color: white;
+    font-weight: bolder;
+    width: 12em;
+    font-size: 13px;
+}
+
+header .contact span{
+    color: #C7C7C7;
+}
+
+header .contact img{
+    float: left;
+    margin-right: 10px;
+    width: 38px;
+}
+
+header .contact-whatsapp{
+    float: right;
+    margin-left: 2em;
+}
+
+/* Menu Mobile */
+@media (max-width: 1070PX) {
+    header .contact-menu{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 760px) {
+    header .list-menu{
+        display: none;
+    }
+    header .contact-menu{
+        width: 100%;
+        position: relative;
+        justify-content: center;
+    }
+    header .logo{
+        width: 100%;
+        justify-content: center;
+    }
+
+    header{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Link: CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/topo.css">
+    <link rel="stylesheet" href="css/linha-comercial.css">
+    <link rel="stylesheet" href="css/sobrenos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <!-- Link: Script -->
+     <script src="js/script.js"></script>
+    <!-- Fonte: Montserrat  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Fonte: Roboto Condensed  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Mercedania Peças LTDA - Autopeças para Linha Pesada. Desde 1979, fornecendo peças de qualidade para veículos pesados no Rio de Janeiro.">
+    <meta name="keywords" content="autopeças, linha pesada, Mercedania, peças de caminhão, peças de ônibus, Rio de Janeiro">
+    <title>Mercedania Peças LTDA</title>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5521999564455" target="_blank">
+            <img src="img/whatsapp/whatsapp.svg" alt="Ícone do Whatsapp">
+            <span>Fale-conosco</span>
+        </a>
+    </div>
+    <header> <!-- Topo da página -->
+        <div class="logo" >
+            <img src="img/header/logotipo.png" alt="Logotipo da Mercedania">
+        </div>
+        <div class="list-menu">
+            <a href="#inicio" class="ativado">Início</a>
+            <a href="#linha-comercial">Linha comercial</a>
+            <a href="#sobrenos">Sobre nós</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <div class="contact-menu">
+            <div class="contact contact-phone">
+                <img src="img/header/phone.svg" alt="Ícone de Telefone">
+                <span>Telefone</span><br>(21) 2562-5000
+            </div>
+            <div class="contact contact-whatsapp">
+                <img src="img/header/wpp.svg" alt="Ícone do Whatsapp">
+                <span>Whatsapp</span><br>(21) 99956-4455
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="topo" id="inicio">
+            <div class="texto">
+                <h1>Autopeças para Linha Pesada</h1> <br>
+                <p>Desde 1979, fornecendo peças de qualidade para veículos pesados no Rio de Janeiro.</p>
+            </div>
+        </div>
+        <div class="beneficios">
+            <div class="cards">
+                <div class="item-card" id="quality">
+                    <img src="img/qualidades/quality.svg" alt="qualidade" width="52">
+                    <span>Qualidade</span>
+                    <p>Vendendo qualidade desde 1979, a Mercedania oferece peças confiáveis e duráveis para garantir o melhor desempenho da sua linha pesada.</p>
+                </div>
+                <div class="item-card" id="shield">
+                    <img src="img/qualidades/shield.svg" alt="qualidade" width="52">
+                    <span>Garantia</span>
+                    <p>Peças com procedência e garantia para que você tenha segurança em cada compra e confiança na estrada.</p>
+                </div>
+                <div class="item-card" id="box">
+                    <img src="img/qualidades/box.svg" alt="qualidade" width="52">
+                    <span>Variedade</span>
+                    <p>Um amplo estoque com peças para diversos modelos e marcas, prontos para atender sua necessidade com agilidade.</p>
+                </div>
+            </div>
+        </div>
+        <div class="linha-comercial" id="linha-comercial">
+            <div class="cabecalho"> <!--CABEÇALHO DA LINHA COMERCIAL-->
+                <span class="headling">linha comercial</span> <br>
+                <h1 class="title-section">Conheça nossos produtos</h1>
+            </div>
+            <div class="menu-interativo">
+                <div class="menu">
+                    <button onclick="mostrarConteudo('motor')" class="active">Material de Motor</button>
+                    <button onclick="mostrarConteudo('eletrico')">Material Elétrico</button>
+                    <button onclick="mostrarConteudo('filtros')">Filtros Diversos</button>
+                    <button onclick="mostrarConteudo('palhetas')">Hastes e Palhetas</button>
+                </div>
+                <div id="motor" class="conteudo ativo">
+                    <div class="item">  <figcaption>Pistão</figcaption>               <div class="photo pistao"></div></div>
+                    <div class="item">  <figcaption>Anel</figcaption>                 <div class="photo anel"></div></div>
+                    <div class="item">  <figcaption>Bronzina</figcaption>             <div class="photo bronzina"></div></div>
+                    <div class="item">  <figcaption>Bombas d’água e Óleo</figcaption> <div class="photo bombas"></div></div>
+                    <div class="item">  <figcaption>Polias</figcaption>               <div class="photo polias"></div></div>
+                    <div class="item">  <figcaption>Cotetor e Carter</figcaption>     <div class="photo cotetor"></div></div>
+                    <div class="item">  <figcaption>Reparos e Válvulas</figcaption>   <div class="photo valvulas"></div></div>
+                    <div class="item">  <figcaption>Outros</figcaption>               <div class="photo outros"></div></div>
+                </div>
+
+                <div id="eletrico" class="conteudo">
+                    <span style="color: white;">coisas vão aparecer aqui sobre material eletrico</span>
+                </div>
+
+                <div id="filtros" class="conteudo">
+                    <span style="color: white;">coisas vão aparecer aqui sobre filtros</span>
+                </div>
+
+                <div id="palhetas" class="conteudo">
+                    <span style="color: white;">coisas vão aparecer aqui sobre palhetas</span>
+                </div>
+            <div class="link link-sobrenos" ></div>                
+            </div>
+        </div>
+        <div class="sobre" id="sobrenos"> <!--Sobre nós-->
+            <span class="headling" id="headling-bk">sobre nós</span> <br>
+            <div class="historia">
+                <div class="hist-content">
+                    <img src="img/sobre-nos/mercedania.jpg" alt="">
+                    <p><span>Nossa história</span> <br><br>
+                    Mercedania é uma empresa fundada há 46 anos para atender à demanda por autopeças da linha pesada, como caminhões Mercedes, Sprinter e muito mais. Nosso crescimento ao longo das décadas reflete a confiança de nossos clientes e a expansão do mercado. Com uma forte presença no setor, destacamo-nos pela entrega rápida, atendimento personalizado e capacidade de atender às necessidades específicas de cada cliente. Seja em nossa loja física ou no site, estamos sempre prontos para oferecer as melhores soluções em autopeças.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contato"> <!--Contato-->
+                <span class="headling" id="headling-contato">contato</span> <br>
+            <div class="contents">
+                <div class="item1">
+                    <title>Central de atendimento</title>
+                    <ul>
+                        <li> <img src="img/contato/location.svg" alt=""> <p><span>Av. Nova York, 568</span><br>Bonsucesso, Rio de Janeiro/RJ</p></li>
+                        <li> <img src="img/contato/phone.svg" alt=""><p><span>(21) 2562-5000</span></p></li>
+                        <li><img src="img/contato/wpp.svg" alt=""><p><span>(21) 99956-4455</span></p></li>
+                        <li><img src="img/contato/Email.svg" alt=""><p><span>vendas@mercedania.com.br</span></p></li>
+                    </ul>
+                    <title>Horário</title>
+                    <ul>
+                        <li> <img src="img/contato/Relogio.svg" alt=""> <p><span>8h às 17h30</span><br>Segunda-feira a Sexta-feira</p></li>
+                    </ul>
+                </div>
+                <div class="item2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.3286331394074!2d-43.25177372647316!3d-22.864315436351077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997eab4bd753fb%3A0x4b9c25279c610696!2sMercedania%20Pe%C3%A7as%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1748520415121!5m2!1spt-BR!2sbr" width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="item3">
+                <div class="container container1">
+                    <span class="title">Formas de pagamento:</span>
+                    <ul>
+                        <li>Dinheiro</li>
+                        <li>Cartão de Crédito</li>
+                        <li>Cartão de Débito</li>
+                        <li>Pix</li>
+                    </ul>
+                </div>
+                <div class="container container2">                    
+                    <span class="title">Bandeiras aceitas:</span>
+                    <div class="icon-group bandeiras">
+                        <img src="img/bandeiras/elo.png" alt="">
+                        <img src="img/bandeiras/hipercard.png" alt="">
+                        <img src="img/bandeiras/mastercard.png" alt="">
+                        <img src="img/bandeiras/visa.png" alt="">
+                        <img src="img/bandeiras/amex.png" alt="">
+                        <img src="img/bandeiras/diners.png" alt="">
+                    </div>
+                </div>
+                <div class="container container3">
+                    <div class="icon-group redes-sociais">                        
+                        <a href="#"><img src="img/redes-sociais/facebook.svg" alt=""></a>
+                        <a href="#"><img src="img/redes-sociais/insta.svg" alt=""></a>
+                        <a href="#"><img src="img/redes-sociais/tiktok.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Mercedania Peças LTDA – CNPJ: 30.046.999/0001-70 – Av. Nova York, 568 – Bonsucesso, Rio de Janeiro/RJ – CEP 21041-040</p>
+    </footer>
+</body>
+</html>

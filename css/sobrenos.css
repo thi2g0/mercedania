@@ -1,0 +1,79 @@
+/* SOBRE NÓS */
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+    #headling-bk{ /* TÍTULO: SOBRE NÓS */
+        height: 30px;
+        display: block;
+        color: #747474;
+    }
+
+    .historia{ /* DIV QUE CONTÉM AS DIV FOTO E TEXTO, NESSA ORDEM */
+        width: 50em;
+        display: flex;
+        margin: 0 auto;
+        background-color: #ececec;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 4em;
+    }
+
+        .hist-content{
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 25px;
+        }
+
+        .hist-content img{ /* ALTERANDO A IMG DA DIV */
+            width: 50%;
+            height: 100%;
+            transition: .1s ease-in-out
+        }
+
+        .hist-content span{
+            font-size: 20px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: black;
+        }
+
+        .hist-content p{
+            align-items: center;
+            padding: 10px;
+            color: #3B3B3B;
+            font-size: 12px;
+            width: 40%;
+        }
+
+/* RESPONSIVO */
+@media (max-width: 760px) {
+    .historia{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .hist-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hist-content img{
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        border-radius: 30px;
+        filter: none;
+    }
+
+    .hist-content p{
+        width: 80%;
+        text-align: center;
+            color: #1f1f1f;
+    }
+    
+}
