@@ -2,7 +2,7 @@
 #contato{ /* Conteúdo principal */
     width: 100%;
     display: block;
-    height: 50em;
+    height: auto;
     background: #0A1848;
 }
 
@@ -185,5 +185,11 @@
         flex-direction: row;
         justify-content: center;
         gap: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        padding: 0;
     }
 }

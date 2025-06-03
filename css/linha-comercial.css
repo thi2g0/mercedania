@@ -151,10 +151,29 @@ main .conteudo.ativo {
 }
 
 /* Responsivo */
-@media (max-width: 760px) {
+@media (max-width: 760px),(max-width:1070px) {
     main .conteudo.ativo {
         max-width: 90%;
     }
+    main .item {
+        width: 100%;
+        max-width: 200px;
+    }
+    main .item .photo {
+        height: 200px;
+    }
+    main .title-section {
+        font-size: 28px;
+    }
+        
+    main .menu-interativo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 760px){    
     main .menu-interativo {
         width: 100%;
         display: flex;
@@ -169,15 +188,5 @@ main .conteudo.ativo {
         width: 90%;
         margin-bottom: 10px;
         padding: 10px;
-    }
-    main .item {
-        width: 100%;
-        max-width: 200px;
-    }
-    main .item .photo {
-        height: 200px;
-    }
-    main .title-section {
-        font-size: 28px;
     }
 }

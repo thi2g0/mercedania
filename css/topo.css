@@ -82,7 +82,7 @@ main .item-card p{
 }
 
 /* topo mobile */
-@media (max-width: 760px) {
+@media (max-width: 1070px) {
 
     /* TOPO */
     .topo{
