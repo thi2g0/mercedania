@@ -166,6 +166,7 @@ main .conteudo.ativo {
         display: flex;
         flex-wrap: wrap;
     }
+    
 }
 
 @media (max-width: 760px){    

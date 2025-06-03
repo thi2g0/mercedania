@@ -25,13 +25,13 @@ header .logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 195px;
+    width: 135px;
     height: 100%;
 }
 
 header img{
-    width: 115px;
-    height: 37px;
+    width: 95px;
+    height: auto;
 }
 
     /* Menu */
