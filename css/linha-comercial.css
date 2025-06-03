@@ -103,11 +103,6 @@ main .conteudo.ativo {
     background-size: 100%;
     transition: .2s ease-in-out;
 }
-/*
-.item:hover .photo{
-    border-radius:15px;
-}
-*/
 .pistao{
     background: url(../img/linhas-comercial/pistao.png) center no-repeat;
 }
@@ -188,5 +183,8 @@ main .conteudo.ativo {
         width: 90%;
         margin-bottom: 10px;
         padding: 10px;
+    }
+    .item figcaption{
+        top: 0;
     }
 }
