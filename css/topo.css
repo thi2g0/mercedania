@@ -125,3 +125,9 @@ main .item-card p{
     }
 
 }
+
+@media (max-width: 520px){
+    main .texto{
+        width: 80%;
+    }
+}
