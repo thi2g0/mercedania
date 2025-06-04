@@ -122,3 +122,14 @@ footer p{
         right: 40px;
     }
 }
+
+@media (max-width:420px){
+    footer{
+        font-size: 0.5em;
+    }
+    .whatsapp{
+        width: 3em;
+        height: 3em;
+        right: 10px;
+    }
+}

@@ -193,3 +193,9 @@
         padding: 0;
     }
 }
+
+@media (max-width: 420px){
+    .item1 ul{
+        padding-left: 0;
+    }
+}

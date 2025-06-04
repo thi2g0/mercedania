@@ -185,7 +185,28 @@ main .conteudo.ativo {
         margin-bottom: 10px;
         padding: 10px;
     }
+}
+
+@media (max-width: 700px){
+    main .item{
+        width: 9em;
+    }
+    
     .item figcaption{
         top: 0;
+        opacity: 1.0;
+        height: 25px;
+    }
+    main .item .photo{
+        height: 143.99px;
+    }
+}
+
+@media (max-width: 420px){
+    main .item{
+        width: 8em;
+    }
+    main .item .photo{
+        height: 143.99px;
     }
 }

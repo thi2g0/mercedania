@@ -77,3 +77,15 @@
     }
     
 }
+
+@media (max-width: 560px){
+    .hist-content img {
+        width: 100%;
+    }
+
+    .hist-content p{
+        font-size: 15px;
+        width: 90%;
+        text-align: left;
+    }
+}
