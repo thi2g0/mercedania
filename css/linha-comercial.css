@@ -1,12 +1,12 @@
 /* LINHA COMERCIAL */
-main .linha-comercial{
+main .linha-comercial {
     width: 100%;
     height: auto;
     margin-top: 50px;
     background: #0A1848;
 }
 
-main .cabecalho{
+main .cabecalho {
     width: 100%;
     height: 60px;
     display: block;
@@ -14,7 +14,7 @@ main .cabecalho{
     text-align: center;
 }
 
-main .title-section{
+main .title-section {
     margin-top: 5px;
     font-size: 33px;
     text-transform: uppercase;
@@ -22,7 +22,7 @@ main .title-section{
 
 }
 
-main .headling{
+main .headling {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
@@ -33,23 +33,26 @@ main .headling{
 }
 
 /* LINHA COMERCIAL - MENU */
-main .menu-interativo{
+main .menu-interativo {
     width: 80%;
     margin: 0 auto;
     display: block;
     justify-content: center;
     margin-top: 20px;
     align-items: center;
-    padding-bottom: 48px; /* ajuste o valor conforme necessário */
+    padding-bottom: 48px;
+    /* ajuste o valor conforme necessário */
 }
+
 main .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      gap: 10px;
-      margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
 }
+
 main .menu button {
     padding: 15px 20px;
     font-family: 'Montserrat', sans-serif;
@@ -62,10 +65,12 @@ main .menu button {
     border: 3px solid #243B6C;
     cursor: pointer;
 }
-main .menu button:hover{
+
+main .menu button:hover {
     border: 3px solid #2c4885;
     background: #2c4885;
 }
+
 main .menu button.active {
     background-color: #243B6C;
 }
@@ -85,17 +90,18 @@ main .conteudo.ativo {
     justify-content: center;
 }
 
-.item{
+.item {
     width: 135px;
     display: flex;
     flex-direction: column-reverse;
 }
 
-.content-center{
+.content-center {
     width: 100%;
     display: flex;
 }
-.item .photo{
+
+.item .photo {
     width: 100%;
     z-index: 2;
     height: 135px;
@@ -103,31 +109,40 @@ main .conteudo.ativo {
     background-size: 100%;
     transition: .2s ease-in-out;
 }
-.pistao{
+
+.pistao {
     background: url(../img/linhas-comercial/pistao.png) center no-repeat;
 }
-.anel{
+
+.anel {
     background: url(../img/linhas-comercial/anel.png) center no-repeat;
 }
-.bronzina{
+
+.bronzina {
     background: url(../img/linhas-comercial/bronzina.png) center no-repeat;
 }
-.bombas{
+
+.bombas {
     background: url(../img/linhas-comercial/bombas\ dagua\ e\ oleo.png) center no-repeat;
 }
-.polias{
+
+.polias {
     background: url(../img/linhas-comercial/polias.png) center no-repeat;
 }
-.cotetor{
+
+.cotetor {
     background: url(../img/linhas-comercial/cotetor\ e\ carter.png) center no-repeat;
 }
-.valvulas{
+
+.valvulas {
     background: url(../img/linhas-comercial/reparos\ e\ valvulas.png) center no-repeat;
 }
-.outros{
+
+.outros {
     background: url(../img/linhas-comercial/outros.png) center no-repeat;
 }
-.item figcaption{
+
+.item figcaption {
     position: relative;
     font-size: 15px;
     height: 45px;
@@ -140,46 +155,63 @@ main .conteudo.ativo {
     opacity: 0.0;
 }
 
-.item:hover figcaption{
+.item:hover figcaption {
     top: 0;
     opacity: 1.0;
 }
 
+/* Efeito blur e opacidade nos outros itens ao passar o mouse */
+main .conteudo.ativo:hover .item:not(:hover) {
+    filter: blur(2px);
+    opacity: 0.4;
+    transition: filter 0.2s, opacity 0.2s;
+}
+
+main .conteudo.ativo .item {
+    transition: filter 0.2s, opacity 0.2s;
+}
+
 /* Responsivo */
-@media (max-width: 760px),(max-width:1070px) {
+@media (max-width: 760px),
+(max-width:1070px) {
     main .conteudo.ativo {
         max-width: 90%;
     }
+
     main .item {
         width: 100%;
         max-width: 200px;
     }
+
     main .item .photo {
         height: 200px;
     }
+
     main .title-section {
         font-size: 28px;
     }
-        
+
     main .menu-interativo {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
-    
+
 }
 
-@media (max-width: 760px){    
+@media (max-width: 760px) {
     main .menu-interativo {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
+
     main .menu {
         display: flex;
         flex-wrap: wrap;
         margin-top: 25px;
     }
+
     main .menu button {
         width: 90%;
         margin-bottom: 10px;
@@ -187,26 +219,28 @@ main .conteudo.ativo {
     }
 }
 
-@media (max-width: 700px){
-    main .item{
+@media (max-width: 700px) {
+    main .item {
         width: 9em;
     }
-    
-    .item figcaption{
+
+    .item figcaption {
         top: 0;
         opacity: 1.0;
         height: 25px;
     }
-    main .item .photo{
+
+    main .item .photo {
         height: 143.99px;
     }
 }
 
-@media (max-width: 420px){
-    main .item{
+@media (max-width: 420px) {
+    main .item {
         width: 8em;
     }
-    main .item .photo{
+
+    main .item .photo {
         height: 143.99px;
     }
 }
