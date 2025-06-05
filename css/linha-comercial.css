@@ -3,7 +3,7 @@ main .linha-comercial {
     width: 100%;
     height: auto;
     margin-top: 50px;
-    background: #0A1848;
+    background: linear-gradient(90deg, #243748, #0A1848);
 }
 
 main .cabecalho {
@@ -62,17 +62,24 @@ main .menu button {
     color: white;
     background: none;
     border-radius: 7px;
-    border: 3px solid #243B6C;
+    border: 3px solid rgba(255, 255, 255, .1);
     cursor: pointer;
 }
 
 main .menu button:hover {
-    border: 3px solid #2c4885;
-    background: #2c4885;
+    border: 3px solid rgba(255, 255, 255, .0);
+    background: rgba(255, 255, 255, .3);
 }
 
 main .menu button.active {
-    background-color: #243B6C;
+    background-color: rgb(255, 255, 255);
+    color: #111;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+}
+
+main .menu button.active:hover {
+    color: #111;
+    border: 3px solid #fff;
 }
 
 /* LINHA COMERCIAL - CONTEÚDO */
@@ -108,38 +115,6 @@ main .conteudo.ativo {
     border-radius: 5px;
     background-size: 100%;
     transition: .2s ease-in-out;
-}
-
-.pistao {
-    background: url(../img/linhas-comercial/pistao.png) center no-repeat;
-}
-
-.anel {
-    background: url(../img/linhas-comercial/anel.png) center no-repeat;
-}
-
-.bronzina {
-    background: url(../img/linhas-comercial/bronzina.png) center no-repeat;
-}
-
-.bombas {
-    background: url(../img/linhas-comercial/bombas\ dagua\ e\ oleo.png) center no-repeat;
-}
-
-.polias {
-    background: url(../img/linhas-comercial/polias.png) center no-repeat;
-}
-
-.cotetor {
-    background: url(../img/linhas-comercial/cotetor\ e\ carter.png) center no-repeat;
-}
-
-.valvulas {
-    background: url(../img/linhas-comercial/reparos\ e\ valvulas.png) center no-repeat;
-}
-
-.outros {
-    background: url(../img/linhas-comercial/outros.png) center no-repeat;
 }
 
 .item figcaption {

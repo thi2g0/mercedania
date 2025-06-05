@@ -1,0 +1,91 @@
+/* MATERIAL DE MOTOR */
+.pistao {
+    background: url(../img/linhas-comercial/material-motor/pistao.png) center no-repeat;
+}
+
+.anel {
+    background: url(../img/linhas-comercial/material-motor/anel.png) center no-repeat;
+}
+
+.bronzina {
+    background: url(../img/linhas-comercial/material-motor/bronzina.png) center no-repeat;
+}
+
+.bombas {
+    background: url(../img/linhas-comercial/material-motor/bombas\ dagua\ e\ oleo.png) center no-repeat;
+}
+
+.polias {
+    background: url(../img/linhas-comercial/material-motor/polias.png) center no-repeat;
+}
+
+.cotetor {
+    background: url(../img/linhas-comercial/material-motor/cotetor\ e\ carter.png) center no-repeat;
+}
+
+.valvulas {
+    background: url(../img/linhas-comercial/material-motor/reparos\ e\ valvulas.png) center no-repeat;
+}
+
+.outros {
+    background: url(../img/linhas-comercial/material-motor/outros.png) center no-repeat;
+}
+
+/* MATERIAL ELÉTRICO */
+.farois-lanternas {
+    background: url(../img/linhas-comercial/material-eletrico/farois-lanternas.png) center no-repeat;
+}
+
+.reles-interruptores {
+    background: url(../img/linhas-comercial/material-eletrico/reles-interruptores.png) center no-repeat;
+}
+
+.sensores-solenoides {
+    background: url(../img/linhas-comercial/material-eletrico/sensores-solenoides.png) center no-repeat;
+}
+
+.comando-de-setas-limpador {
+    background: url(../img/linhas-comercial/material-eletrico/comando-de-setas-limpador.png) center no-repeat;
+}
+
+.alternador-motor-partida {
+    background: url(../img/linhas-comercial/material-eletrico/alternador-motor-partida.png) center no-repeat;
+}
+
+.instrumentos-de-painel {
+    background: url(../img/linhas-comercial/material-eletrico/instrumentos-de-painel.png) center no-repeat;
+}
+
+/* FILTROS DIVERSOS */
+.filtros-ar {
+    background: url(../img/linhas-comercial/filtros-diversos/filtros-ar.png) center no-repeat;
+}
+
+.filtros-industrais {
+    background: url(../img/linhas-comercial/filtros-diversos/filtros-industrais.png) center no-repeat;
+}
+
+.filtros-oleo {
+    background: url(../img/linhas-comercial/filtros-diversos/filtros-oleo.png) center no-repeat;
+}
+
+.filtros-combustivel {
+    background: url(../img/linhas-comercial/filtros-diversos/filtros-combustivel.png) center no-repeat;
+}
+
+.filtros-hidraulico {
+    background: url(../img/linhas-comercial/filtros-diversos/filtros-hidraulico.png) center no-repeat;
+}
+
+/* HASTES E PALHETAS */
+.hastes-duplas-simples {
+    background: url(../img/linhas-comercial/hastes-palhetas/hastes-duplas-simples.png) center no-repeat;
+}
+
+.motores-eletricos-pneumaticos {
+    background: url(../img/linhas-comercial/hastes-palhetas/motores-eletricos-pneumaticos.png) center no-repeat;
+}
+
+.palhetas-diversas {
+    background: url(../img/linhas-comercial/hastes-palhetas/palhetas-diversas.png) center no-repeat;
+}
