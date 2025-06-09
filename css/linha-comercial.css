@@ -153,6 +153,10 @@ main .conteudo.ativo .item {
         max-width: 90%;
     }
 
+    .item figcaption {
+        font-size: 12px;
+    }
+
     main .item {
         width: 100%;
         max-width: 200px;
