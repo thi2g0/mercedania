@@ -199,6 +199,13 @@ main .conteudo.ativo .item {
         width: 9em;
     }
 
+    main .conteudo.ativo:hover .item:not(:hover) {
+        filter: none;
+        opacity: 1;
+        transition: none;
+    }
+
+
     .item figcaption {
         top: 0;
         opacity: 1.0;
