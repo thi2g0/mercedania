@@ -22,10 +22,10 @@ function mostrarConteudo(id) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const sections = [
-        { id: "inicio", link: document.querySelector('a[href="#inicio"]') },
-        { id: "linha-comercial", link: document.querySelector('a[href="#linha-comercial"]') },
-        { id: "sobrenos", link: document.querySelector('a[href="#sobrenos"]') },
-        { id: "contato", link: document.querySelector('a[href="#contato"]') }
+        { id: "inicio", links: document.querySelectorAll('a[href="#inicio"]') },
+        { id: "linha-comercial", links: document.querySelectorAll('a[href="#linha-comercial"]') },
+        { id: "sobrenos", links: document.querySelectorAll('a[href="#sobrenos"]') },
+        { id: "contato", links: document.querySelectorAll('a[href="#contato"]') }
     ];
 
     function onScroll() {
@@ -44,10 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+        // Remove 'ativado' de todos os links
         sections.forEach(section => {
-            section.link.classList.remove("ativado");
+            section.links.forEach(link => link.classList.remove("ativado"));
         });
-        currentSection.link.classList.add("ativado");
+        // Adiciona 'ativado' nos links da seção atual
+        currentSection.links.forEach(link => link.classList.add("ativado"));
     }
 
     window.addEventListener("scroll", onScroll);
