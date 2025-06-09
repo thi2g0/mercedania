@@ -162,13 +162,44 @@ header .contact-whatsapp {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
         display: none;
-        justify-content: center;
-        align-items: center;
+        overflow: visible;
+        flex-direction: column;
     }
 
     #menu-mobile:target {
         display: flex;
     }
+}
+
+
+/* MENU MOBILE */
+#menu-mobile .fechar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#menu-mobile .list-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    overflow: scroll;
+    justify-content: center;
+}
+
+#menu-mobile .list-menu-mobile a {
+    background-color: #0d1f5a;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
 }
