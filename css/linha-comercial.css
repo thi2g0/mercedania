@@ -181,6 +181,12 @@ main .conteudo.ativo .item {
         flex-wrap: wrap;
     }
 
+    main .conteudo.ativo:hover .item:not(:hover) {
+        filter: none;
+        opacity: 1;
+        transition: none;
+    }
+
     main .menu {
         display: flex;
         flex-wrap: wrap;
@@ -197,12 +203,6 @@ main .conteudo.ativo .item {
 @media (max-width: 700px) {
     main .item {
         width: 9em;
-    }
-
-    main .conteudo.ativo:hover .item:not(:hover) {
-        filter: none;
-        opacity: 1;
-        transition: none;
     }
 
 
