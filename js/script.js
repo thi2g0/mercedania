@@ -1,13 +1,13 @@
 function hideLoading() {
-      document.getElementById("loading").style.display = "none";
-      document.getElementById("content").style.display = "block";
-    }
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
 
-    // Remove a tela de loading quando a página carregar
-    window.addEventListener("load", hideLoading);
+// Remove a tela de loading quando a página carregar
+window.addEventListener("load", hideLoading);
 
-    // Fallback: esconde o loading mesmo se "load" não disparar (ex: erro em imagem externa)
-    setTimeout(hideLoading, 5000); 
+// Fallback: esconde o loading mesmo se "load" não disparar (ex: erro em imagem externa)
+setTimeout(hideLoading, 5000);
 
 function mostrarConteudo(id) {
     const botoes = document.querySelectorAll('.menu button');
